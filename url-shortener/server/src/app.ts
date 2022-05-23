@@ -31,7 +31,7 @@ async function main() {
   // parse application/json
   app.use(bodyParser.json());
   // @ts-ignore
-  app.use(middleware(() =>  keploy.create().then( x => x)));
+  app.use(middleware(keploy);
   // keploy.create();
 
    app.listen(port, "0.0.0.0", () => {
